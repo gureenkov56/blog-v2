@@ -7,13 +7,15 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "start-server": "nodemon api/server.js"
+    "start-server": "nodemon api/server.js",
+    "prod": "concurrently \"node .output/server/index.mjs\" \"npm run start-server\" "
   },
   "devDependencies": {
     "@types/node": "^18",
     "nuxt": "^3.5.1"
   },
   "dependencies": {
+    "concurrently": "^8.0.1",
     "express": "^4.18.2",
     "nodemon": "^2.0.22"
   }
