@@ -1,9 +1,8 @@
-// for start on VPS with PM2
 module.exports = {
     apps: [
         {
-            name: 'Blog',
-            port: '80',
+            name: 'blog',
+            port: 3001,
             exec_mode: 'cluster',
             instances: 'max',
             script: './.output/server/index.mjs'
