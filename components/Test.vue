@@ -1,26 +1,30 @@
 <template>
     <div>
-        TEST connection: {{ connection }}
+        
+        <ul>
+            <li 
+            v-for="post in posts"
+            :key="post.title"
+            >
+                {{ post.title }}
+            </li>
+        </ul>
+        {{ data }}
     </div>
 </template>
 
 <script lang=ts>
 import { defineComponent, ref, onMounted } from 'vue'
+import { useFetch } from 'nuxt/app';
 
 export default defineComponent({
     name: 'Test',
-    setup() {
-        const connection = ref<string>('NO CONNECTION');
+    async setup() {
 
-        onMounted(() => {
-            console.log('mounted');
-            fetch('/api/test')
-                .then(res => res.json())
-                .then(res => connection.value = res.message)
-        })
+        const {data: posts} = await useFetch('/api/test')
 
         return {
-            connection
+            posts
         }
     }
 })
