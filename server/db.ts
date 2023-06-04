@@ -9,23 +9,3 @@ export const client = new pg.Client({
     password: 'root',
 })
 
-// async function start() {
-//     await client.connect()
-
-//     const query = {
-//         text: 'INSERT INTO posts(title, content, created_on) VALUES($1, $2, $3)',
-//         values: ['TitleTest', 'My first post', 'NOW()'],
-//     }
-
-//     const res = await client.query(query)
-//     console.log(res.rows[0])
-
-//     const result = await client.query('SELECT * FROM posts')
-//     console.log(result)
-
-//     await client.end()
-
-// }
-
-// start()
-

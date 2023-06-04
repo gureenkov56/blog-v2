@@ -21,7 +21,8 @@ export default defineComponent({
     name: 'Test',
     async setup() {
 
-        // const {data: posts} = await useFetch('/api/test')
+        const {data} = await useFetch('/api/test');
+        console.log('data', data);
 
         // return {
         //     posts
