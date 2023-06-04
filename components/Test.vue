@@ -1,15 +1,15 @@
 <template>
     <div>
-        
-        <ul>
-            <li 
+        TEST
+        <!-- <ul> -->
+            <!-- <li 
             v-for="post in posts"
             :key="post.title"
             >
                 {{ post.title }}
             </li>
         </ul>
-        {{ data }}
+        {{ data }} -->
     </div>
 </template>
 
@@ -21,11 +21,11 @@ export default defineComponent({
     name: 'Test',
     async setup() {
 
-        const {data: posts} = await useFetch('/api/test')
+        // const {data: posts} = await useFetch('/api/test')
 
-        return {
-            posts
-        }
+        // return {
+        //     posts
+        // }
     }
 })
 </script>
