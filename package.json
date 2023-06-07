@@ -13,7 +13,8 @@
   },
   "devDependencies": {
     "@types/node": "^18",
-    "nuxt": "^3.5.1"
+    "nuxt": "^3.5.1",
+    "prisma": "^4.15.0"
   },
   "dependencies": {
     "concurrently": "^8.0.1",

@@ -1,0 +1,20 @@
+// npx prisma migrate dev
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://gureenkov56:root@localhost:5432/blog?schema=public"
+}
+
+model categories {
+  id      Int       @id @default(autoincrement())
+  title   String
+  posts   posts[]
+}
+
+model posts {
+  id      Int       @id @default(autoincrement())
+  title   String
+  content String
+  category  categories @relation(fields: [categoryId], references: [id])
+  categoryId Int
+}
