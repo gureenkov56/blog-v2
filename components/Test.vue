@@ -1,15 +1,8 @@
 <template>
     <div>
         TEST
-        <!-- <ul> -->
-            <!-- <li 
-            v-for="post in posts"
-            :key="post.title"
-            >
-                {{ post.title }}
-            </li>
-        </ul>
-        {{ data }} -->
+       >>> {{ data }} 
+       {{ error }}
     </div>
 </template>
 
@@ -20,13 +13,15 @@ import { useFetch } from 'nuxt/app';
 export default defineComponent({
     name: 'Test',
     async setup() {
+        const {data, error} = await useFetch('/api/test');
 
-        const {data} = await useFetch('/api/test');
         console.log('data', data);
+        console.log('err', error);
 
-        // return {
-        //     posts
-        // }
+        return {
+            data,
+            error
+        }
     }
 })
 </script>
