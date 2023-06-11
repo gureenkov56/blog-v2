@@ -1,3 +1,4 @@
+// @ts-ignore
 import { client } from "~/server/db"
 
 class PostController {
