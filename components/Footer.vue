@@ -36,13 +36,16 @@ footer {
             white-space: nowrap;
         }
     }
+
+    :deep(.logo) {
+        color: #C4C4C4;
+    }
+
+    :deep(.instagram-icon) {
+        width: 20px;
+    }
 }
-::v-deep .logo {
-    color: #C4C4C4;
-}
-::v-deep .instagram-icon {
-    width: 20px;
-}
+
 
 
 </style>

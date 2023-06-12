@@ -18,6 +18,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .app {
@@ -31,6 +32,12 @@
   a {
     text-decoration: none;
     color:  inherit;
+  }
+
+  .content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 }
 </style>
