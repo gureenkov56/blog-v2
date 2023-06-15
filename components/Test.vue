@@ -1,13 +1,13 @@
 <template>
     <div>
         TEST
-       >>> {{ data }} 
-       {{ error }}
+        >>> {{ data }} 
+        {{ error }}
     </div>
 </template>
 
 <script lang=ts>
-import { defineComponent, ref, onMounted } from 'vue'
+import { defineComponent } from 'vue'
 import { useFetch } from 'nuxt/app';
 
 export default defineComponent({

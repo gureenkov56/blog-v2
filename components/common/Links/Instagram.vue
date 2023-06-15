@@ -1,6 +1,13 @@
 <template>
-    <NuxtLink to="https://www.instagram.com/gureenkov56/" target="_blank">
-        <img class="instagram-icon" src="/icons/inst.png" alt="Instagram">
+    <NuxtLink
+        to="https://www.instagram.com/gureenkov56/"
+        target="_blank"
+    >
+        <img
+            class="instagram-icon"
+            src="/icons/inst.png"
+            alt="Instagram"
+        >
     </NuxtLink>
 </template>
 

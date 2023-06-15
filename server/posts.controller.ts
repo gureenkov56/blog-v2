@@ -1,5 +1,5 @@
 // @ts-ignore
-import { client } from "~/server/db"
+import { client } from '~/server/db'
 
 class PostController {
     async getAllPosts() {

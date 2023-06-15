@@ -1,5 +1,10 @@
 <template>
-    <NuxtLink to="/" class="logo">GUREENKOV56</NuxtLink>
+    <NuxtLink
+        to="/"
+        class="logo"
+    >
+        GUREENKOV56
+    </NuxtLink>
 </template>
 
 <script lang=ts>

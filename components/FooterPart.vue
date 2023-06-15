@@ -1,12 +1,12 @@
 <template>
     <footer>
-        <div class="desc">
-            <span>Показалось, что какой-то сюжет про вас? </span>
-            <span>Не стоит себе льстить.</span><br />
-            <span>Все персонажи выдуманы, совпадения случайны.</span>
-        </div>
         <CommonLogo />
         <CommonLinksInstagram />
+        <div class="desc">
+            <span>Показалось, что какой-то сюжет про вас? </span>
+            <span>Не стоит себе льстить.</span><br>
+            <span>Все персонажи выдуманы, совпадения случайны.</span>
+        </div>
     </footer>
 </template>
 
@@ -14,7 +14,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-    name: 'Footer',
+    name: 'FooterPart',
 })
 </script>
 
