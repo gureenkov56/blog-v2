@@ -1,11 +1,14 @@
-// @ts-ignore
-import pg from 'pg'
+import {Client} from 'pg'
 
-export const client = new pg.Client({
+const client = new Client({
     host: 'localhost',
     port: 5432,
     database: 'blog',
     user: 'gureenkov56',
     password: 'root',
 })
+
+client.connect();
+
+export {client};
 

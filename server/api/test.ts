@@ -1,3 +1,3 @@
-import { postController } from '~/server/posts.controller';
+import { postController } from '../posts.controller';
 
 export default defineEventHandler(() => postController.getAllPosts())

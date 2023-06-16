@@ -6,15 +6,23 @@ datasource db {
 }
 
 model categories {
-  id      Int       @id @default(autoincrement())
-  title   String
-  posts   posts[]
+  id    Int     @id @default(autoincrement())
+  title String
+  posts posts[]
 }
 
 model posts {
-  id          Int       @id @default(autoincrement())
-  title       String
-  content     String
+  id Int @id @default(autoincrement())
+
+  seo_h1          String @default("")
+  seo_description String @default("")
+
+  title_icon  String @default("")
+  title       String @default("")
+  description String @default("")
+  content     String @default("")
   category    categories @relation(fields: [category_id], references: [id])
   category_id Int
 }
+
+
