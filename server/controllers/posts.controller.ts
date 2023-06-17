@@ -1,7 +1,8 @@
-import { client } from './db'
+import { PostRaw } from '../../handlers/Post'
+import { client } from '../db'
 
 class PostController {
-    async getAllPosts() {
+    async getAllPosts(): Promise<PostRaw[]> {
         const result = await client.query('SELECT * FROM posts;')
         return result.rows
     }
