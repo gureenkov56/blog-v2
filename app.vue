@@ -38,6 +38,15 @@
     max-width: 500px;
     margin: 0 auto;
     padding: 0 20px;
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
   }
 }
 </style>
