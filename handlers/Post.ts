@@ -1,5 +1,12 @@
 import { CategoryId } from '~/handlers/category/categoryId.enum'
 
+export type PostPreviewRaw = {
+    id: number
+    description?: string
+    title?: string
+    title_icon?: string
+}
+
 export type PostRaw = {
     id: number
     category_id: CategoryId

@@ -9,9 +9,11 @@ const client = new pg.Client({
 })
 
 async function connectAndTest() {
-    await client.connect();
-    const test = await client.query('SELECT * FROM posts;')
-    console.log('test.rows', test.rows); 
+    await client.connect((err) => {
+        if (err) {
+            console.log('Connecting to database isn`t success');
+        }
+    });
 }
 
 connectAndTest()

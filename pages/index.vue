@@ -26,14 +26,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, ref } from 'vue';
+import { defineComponent, computed } from 'vue';
 import { useFetch } from 'nuxt/app';
 import { Post } from '~/handlers/Post';
 
 export default defineComponent({
     name: 'Index',
     async setup() {
-        const {data, error} = await useFetch('/api/test');
+        const {data, error} = await useFetch('/api/posts');
 
         const posts = computed(() => {
             if(data.value) {

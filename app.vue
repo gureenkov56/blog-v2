@@ -1,7 +1,9 @@
 <template>
     <div class="app">
         <HeaderPart />
-        <NuxtPage class="content" />
+        <div class="content">
+            <NuxtPage class="content__inner" />
+        </div>
         <FooterPart />
     </div>
 </template>
@@ -25,9 +27,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  .content {
-    flex: 1;
-  }
 
   a {
     text-decoration: none;
@@ -35,9 +34,15 @@
   }
 
   .content {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 100%;
+    flex: 1;
+
+
+    &__inner {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
 
     h1 {
       font-family: 'Montserrat', sans-serif;
